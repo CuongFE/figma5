@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==== BOX ICONS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <!-- link Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />        
+        <!--=== CSS ====------>   
+    
+    <Link rel="stylesheet" href="./styles.css">
+    <Link rel="stylesheet" href="./responsive.css">
+    <title>Figma 5</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+<body>
+    <section class="section__header__top">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__item header__item--mobile">
+                </div>
+                <div class="header__item">
+                    <p class="normal__text header__description">FREE SHIPPING IN ITALY</p>
+                </div>
+                <div class="header__item">
+                    <select class="header__language">
+                        <option value="Italian" selected class="normal__text">Italian</option>
+                        <option value="English" class="normal__text">English</option>
+                        <option value="Vietnam" class="normal__text">Vietnam</option>
+                        <option value="Korea" class="normal__text">Korea</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <div class="header__logo">
+                    <img src="Assets/images/headerlogo.png" alt="logo">
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link normal__text">SHOP</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link normal__text">OUR HISTORY</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link normal__text">JEWELERY PRODUCTION</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link normal__text">BECOME A DEALER</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link normal__text">CONTACT</a>                   
+                    </li>
+                </ul>
+                <div class="header__icon">
+                    <div class="header__icon--item">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="header__icon--item">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="header__icon--item">
+                       <i class='bx bx-user'></i>
+                    </div>
+                    <div class="header__icon--item">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <div class="header__icon--item nav__toggle">                    
+                        <i class='bx bx-menu nav__icon'></i>    
+                        <i class='bx bx-x close-icon'></i>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- SLIDE -->
+    <section class="section__slide">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./Assets/images/slide1.png" class="slide__img">
+                <div class="slide__text">
+                    <h2 class="bigger__title slide__heading">
+                        DECORAZIONI PER LE FESTE
+                    </h2>
+                    <button class="button normal__text letter-sp">SHOP NOW</button>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./Assets/images/slide1.png" class="slide__img">
+                <div class="slide__text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./Assets/images/slide1.png" class="slide__img">
+                <div class="slide__text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>            
+        </div>
+    </section>
+    <!-- CATEGORY -->
+
+    <section class="section__category pb">
+        <div class="container-medium">
+            <div class="category">
+                <h2 class="bigger__title category__heading">
+                    SHOP BY CATEGORY
+                </h2>
+                <div class="category__product">
+                    <div class="category__image">
+                        <img src="Assets/images/category1.png" alt="category1" class="category__img">
+                        <div class="category__product--name">
+                            <p class="category__product__name normal__text letter-sp center">RING</p>
+                        </div>
+                    </div>
+                    <div class="category__image">
+                        <img src="Assets/images/category2.png" alt="category1" class="category__img">
+                        <div class="category__product--name">
+                            <p class="category__product__name normal__text letter-sp center">BRACELETS</p>
+                        </div>
+                    </div>
+                    <div class="category__image">
+                        <img src="Assets/images/category3.png" alt="category1" class="category__img">
+                        <div class="category__product--name">
+                            <p class="category__product__name normal__text letter-sp center">EARINGS</p>
+                        </div>
+                    </div>
+                    <div class="category__image">
+                        <img src="Assets/images/category4.png" alt="category1" class="category__img">
+                        <div class="category__product--name">
+                            <p class="category__product__name normal__text letter-sp center">NECKLACE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section__video">
+        <div class="container-medium">
+            <div class="video pb">
+                <div class="video__product">
+                    <img src="Assets/images/video.png" alt="videoimg" class="video__imge">
+                    <img src="Assets/images/playvideo.png" alt="play video button" class="video__play">
+                </div>
+                <div class="video__content">
+                    <div class="video__intro">
+                        <h2 class="bigger__title video__title letter-sp">
+                            WE FOCUS ON WHAT’S REALLY IMPORTANT
+                        </h2>
+                        <p class="normal__text video__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consecte
+                        </p>
+                        <button class="normal__text button letter-sp">DISCOVER THE STORY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="section__product">
+        <div class="container-medium">
+            <div class="product pb">
+                <h2 class="bigger__title product__title">
+                    FEATURED PRODUCT
+                </h2>
+                <div class="product__name">
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__love">
+                        </div>
+                        <div class="product__content center">
+                            <h3 class="product__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__love">
+                        </div>
+                        <div class="product__content center">
+                            <h3 class="product__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__love">
+                        </div>
+                        <div class="product__content center">
+                            <h3 class="product__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__love">
+                        </div>
+                        <div class="product__content center">
+                            <h3 class="product__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="section__collection">
+        <div class="container">
+            <div class="collection">
+                <h2 class="big__title collection__title">
+                    NEW COLLECTION 2021
+                </h2>
+                <p class="normal__text collection__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu
+                </p>
+                <a href="#" class="normal__text letter-sp collection__link">SEE MORE > </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="section__service">
+        <div class="container-medium">
+            <div class="service pb">
+                <h2 class="service__title--big bigger__title">
+                    OUR SERVICES
+                </h2>
+                <div class="service__item">
+                    <div class="service__content">
+                        <img src="Assets/images/service1.png" class="service__img">
+                        <h3 class="service__title normal__title">
+                            FREE SHIPPING IN ITALY
+                        </h3>
+                        <p class="service__description normal__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                        <a href="#" class="normal__text service__link letter-sp">READ MORE > </a>
+                    </div>
+
+                    <div class="service__content">
+                        <img src="Assets/images/service1.png" class="service__img">
+                        <h3 class="service__title normal__title">
+                            FREE SHIPPING IN ITALY
+                        </h3>
+                        <p class="service__description normal__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                        <a href="#" class="normal__text service__link letter-sp">READ MORE > </a>
+                    </div>
+
+                    <div class="service__content">
+                        <img src="Assets/images/service1.png" class="service__img">
+                        <h3 class="service__title normal__title">
+                            FREE SHIPPING IN ITALY
+                        </h3>
+                        <p class="service__description normal__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                        <a href="#" class="normal__text service__link letter-sp">READ MORE > </a>
+                    </div>
+
+                    <div class="service__content">
+                        <img src="Assets/images/service1.png" class="service__img">
+                        <h3 class="service__title normal__title">
+                            FREE SHIPPING IN ITALY
+                        </h3>
+                        <p class="service__description normal__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                        <a href="#" class="normal__text service__link letter-sp">READ MORE > </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="section__footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo center">
+                    <img src="./Assets/images/footerlogo.png" alt="footer-logo" class="footer__logo--img">
+                </div>
+                <div class="footer__box">
+                    <div class="footer__content" style="order: 2">
+                        <h3 class="normal__text footer__title letter-sp">CUSTOMER CARE</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Track your order</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Frequent Question</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="order: 3">
+                        <h3 class="normal__text footer__title letter-sp">LEGAL INFORMATION:</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Company name: De Carlo Nicholas</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">VAT number: 07020260480</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">REA: FI-674952</a></li>
+                            <p class="normal__text footer__address">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="order: 4">
+                        <h3 class="normal__text footer__title letter-sp">LEGAL TERMS:</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Informazioni legali</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Condizioni generali di vendita</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Informativa sulla privacy</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Cookie policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="order: 1">
+                        <div class="footer__intro">
+                            <h3 class="normal__text footer__title letter-sp">SUBSCRIBE FOR NEWSLETTER</h3>
+                            <form action="">
+                                <div class="form-email">
+                                    <input required type="email" name="" id="inputEmail" class="normal__text inputEmail" placeholder="Your Email">
+                                    <button class="normal__text form__button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer__detail">
+                            <div class="footer__social">
+                                <h3 class="normal__text footer__title letter-sp">SOCIAL</h3>
+                            </div>
+                            <ul class="footer-social__list">
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/fb.png" alt="facebook" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/insta.png" alt="instagram" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/linkedin.png" alt="linkedin" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/youtube.png" alt="youtube" class="footer__social--img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                                                
+                    </div>
+                </div>
+                <div class="footer__end center">
+                    <p class="normal__text footer__description">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
