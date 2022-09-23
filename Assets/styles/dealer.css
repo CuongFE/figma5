@@ -1,0 +1,97 @@
+.section__form-dealer .container-medium{
+  padding-inline: 100px;
+}
+.dealer__description {
+  color: var(--color-font--black2);
+}
+.form-label {
+  display: block;
+  margin-bottom: 11px;
+}
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid #ececec;
+  box-shadow: none;
+  background: rgb(255, 255, 255);
+  position: relative;
+  cursor: pointer;
+}
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid #ececec;
+  outline: none;
+}
+.dealer__button {
+  background-color: var(--color-background--dark);
+  color: #fff;
+}
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: "";
+  position: absolute;
+  top: calc(50%);
+  right: 29px;
+  height: 7px;
+  width: 12px;
+  z-index: 1000;
+  background: url(../images/selectdropdown.png) no-repeat center center / cover;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+#checked2,
+#checked1 {
+  width: 24px;
+  height: 24px;
+}
+input[type="checkbox"] {
+  margin-right: 20px;
+}
+.section__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form__information {
+  max-width: 480px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form__information-message {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.form-mess {
+  padding-bottom: 108px;
+  width: 100%;
+}
+.form-choose {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-choose-btn {
+    margin-top: 30px;
+}
+.dealer__head {
+    margin-bottom: 100px;
+}
+.dealer__title {
+    margin-bottom: 15px;
+}

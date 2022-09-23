@@ -1,0 +1,74 @@
+.section__ourcollection {
+  background-image: url(../images/collectionbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ourcollection {
+  padding: 151px 0;
+}
+.ourcollection__title {
+  margin-bottom: 5px;
+  color: #fff;
+}
+.ourcollection_description {
+  color: var(--color-font--gray);
+}
+.product__filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__filter__description {
+    color : var(--color-font--black2);
+}
+.product__filter-content {
+  display: flex;
+}
+.mr-68 {
+  margin-right: 68px;
+}
+.product__select {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* PRODUCT COLLECTION */
+
+.product__collection__img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.product__collection__love {
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.product__collection__button {
+  border: 1px solid #171719;
+}
+.product__collection__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.product__collection__image {
+  flex: 0 0 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.product__collection__price {
+  margin-block: 10px 20px;
+}
+.product__collection__title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}

@@ -33,8 +33,9 @@
   --color-background--light: #f5f5f5;
   --color-font--black1: #171719;
   --color-font--black2: #84848e;
-
+  --color-white : #fff;
   --color-font--gray: #bababf;
+  --white-color :#fff;
   /*===== Fonts and typography ======*/
   --font-primary: "Lato";
 
@@ -97,7 +98,9 @@ h6 {
   max-width: 1180px;
   margin: 0 auto;
 }
-
+.mt-100 {
+  margin-top : 100px;
+}
 .pb {
   padding-block: 100px;
 }
@@ -179,6 +182,7 @@ h6 {
 }
 .nav__item {
   margin-right: 50px;
+  position: relative;
 }
 .nav__item:last-child {
   margin-right: 0px;
@@ -186,6 +190,7 @@ h6 {
 .nav__link {
   letter-spacing: 2px;
   color: var(--color-background--dark);
+  position: relative;
 }
 .header__icon {
   display: flex;
@@ -202,6 +207,69 @@ h6 {
 .header {
   background-color: #fff;
 }
+.nav__list .nav__item .nav__link:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+.nav__list .nav__item .nav__link:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* submenu */
+.nav__dropdown {
+  width: 12px;
+}
+.shop__option-link {
+  color: var(--color-background--dark);
+  position: relative;
+}
+.shop__option-select {
+  padding: 0 10px;
+}
+.shop__option {
+  position: absolute;
+  top: 100%;
+  background-color: var(--white-color);
+  width: 200%;
+  left: -50%;
+  margin-top: 2px;
+  padding: 10px 0;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+  display: none;
+  z-index: 2;
+  border: 1px solid rgba(233, 220, 220, 0.466);
+}
+.nav__item:hover .shop__option {
+  display: block;
+}
+
+.shop__option .shop__option-item .shop__option-link:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+.shop__option .shop__option-item .shop__option-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* SLIDE */
 .slideshow-container {
   position: relative;
@@ -327,9 +395,7 @@ h6 {
 }
 
 /* PRODUCT */
-.product {
-  margin-left: -45px;
-}
+
 .product__img {
   position: relative;
   margin-bottom: 20px;
@@ -347,10 +413,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: scroll;
 }
 .product__image {
   flex: 0 0 25%;
-  max-width: 25%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -500,4 +567,101 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
   display: none;
+}
+/* ================ PAGE HISTORY =================== */
+/* HISTORY */
+.section__history {
+  background-color: var(--color-background--light);
+}
+.history {
+  padding-block: 82px;
+}
+
+/* BIRTH OF BRAND */
+
+.birth__title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #171719;
+}
+.birth {
+  padding-inline: 100px;
+}
+.birth__image {
+  position: relative;
+  margin-bottom: 50px;
+}
+.birth__play {
+  width: 78px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+.birth__description {
+  color: var(--color-font--black2);
+}
+
+/* FEATURE */
+.feature__icon {
+  width: 40px;
+}
+.feature__content {
+  display: flex;
+  align-items: center;
+}
+.featured__img {
+  width: 500px;
+}
+.feature__intro, .feature__image, .feature__image2 {
+  width: 50%;
+}
+.feature__image {
+  display: flex;
+  justify-content: flex-end;
+}
+.feature__image2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.feature__icon {
+  margin-bottom: 30px;
+}
+.featured__title {
+  margin-bottom: 25px;
+}
+.featured__descript {
+  color: var(--color-font--black2);
+  max-width: 497px;
+  width: 100%;
+}
+.featured__descript span {
+  color : var(--color-font--black1);
+}
+
+/* REASON */
+.section__reason {
+  background-image : url(./Assets/images/reason.svg);
+  padding: 175px 0;
+}
+.reason {
+  text-align: center;
+}
+.reason__title {
+  color: var(--color-white);
+}
+.reason__description {
+  color: var(--color-font--gray);
+  margin-block: 15px 41px;
+}
+
+
+/* ================ PAGE DEALER =================== */
+.section__dealer {
+  background-color: var(--color-background--light);
+}
+.dealer {
+  padding-block: 82px;
 }

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==== BOX ICONS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <!-- link Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />        
+        <!--=== CSS ====------>   
+    
+    <Link rel="stylesheet" href="./styles.css">
+    <Link rel="stylesheet" href="./Assets/styles/collection.css">
+    <Link rel="stylesheet" href="./responsive.css">
+    <title>COLLECTION</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+<body>
+
+    <section class="section__header__top">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__item header__item--mobile">
+                </div>
+                <div class="header__item">
+                    <p class="normal__text header__description">FREE SHIPPING IN ITALY</p>
+                </div>
+                <div class="header__item">
+                    <select class="header__language">
+                        <option value="Italian" selected class="normal__text">Italian</option>
+                        <option value="English" class="normal__text">English</option>
+                        <option value="Vietnam" class="normal__text">Vietnam</option>
+                        <option value="Korea" class="normal__text">Korea</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <div class="header__logo">
+                    <img src="Assets/images/headerlogo.png" alt="logo">
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link active-link normal__text">SHOP</a>   
+                        <img src="./Assets/images/selectdropdown.png" alt="dropdown" class="nav__dropdown"> 
+                        <div class="shop__option">
+                            <ul class="shop__option-select">
+                                <li class="shop__option-item mb-15">
+                                    <a href="#" class="shop__option-link normal__text">COLLECTION</a>                                      
+                                </li>
+                                <li class="shop__option-item">
+                                    <a href="./FQA.html" target="_blank" class="shop__option-link normal__text">FQA</a>                                      
+                                </li>
+                            </ul>
+                        </div>               
+                    </li>
+                    <li class="nav__item">
+                        <a href="./history.html" target="_blank" class="nav__link active-link normal__text">OUR HISTORY</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="./product.html" target="_blank" class="nav__link active-link normal__text">JEWELERY PRODUCTION</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="./dealer.html" target="_blank" class="nav__link active-link normal__text">BECOME A DEALER</a>                   
+                    </li>
+                    <li class="nav__item">
+                        <a href="./contact.html" target="_blank" class="nav__link active-link normal__text">CONTACT</a>                   
+                    </li>
+                </ul>
+                <div class="header__icon">
+                    <div class="header__icon--item">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="header__icon--item">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="header__icon--item">
+                       <i class='bx bx-user'></i>
+                    </div>
+                    <div class="header__icon--item">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <div class="header__icon--item nav__toggle">                    
+                        <i class='bx bx-menu nav__icon'></i>    
+                        <i class='bx bx-x close-icon'></i>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- OURCOLLECTION -->
+
+    <section class="section__ourcollection">
+        <div class="container-medium">
+            <div class="ourcollection">
+                <h2 class="bigger__title ourcollection__title">
+                    RINGS
+                </h2>
+                <p class="normal__text ourcollection_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__product__collection">
+        <div class="container-medium">
+            <div class="product__collection pb">
+                <div class="product__filter mb-60 mb-40">
+                    <p class="product__filter__description normal__text">There are 30 products</p>
+                    <div class="product__filter-content">
+                        <h2 class="product__filter-title normal__title mr-68">
+                            <label for="filter">SORT BY :</label>
+
+                            <select id="filter" class="product__select">
+                              <option value="atoz" selected>FROM A TO Z</option>
+                              <option value="ztoa">FROM Z TO A</option>
+                            </select>
+                        </h2>
+                        <h2 class="product__filter-title normal__title">FILTER</h2>
+                    </div>
+                </div>
+                <div class="product__collection__name mb-60 mb-40">
+                    <div class="product__collection__image mb-40">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image mb-40">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>                    
+                </div>   
+                
+                <div class="product__collection__name">
+                    <div class="product__collection__image mb-40">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image mb-40">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product__collection__image">
+                        <div class="product__collection__img">
+                            <img src="./Assets/images/product1.png" alt="product" class="product__collection__img--main">
+                            <img src="./Assets/images/produtclove.png" alt="productlove" class="product__collection__love">
+                        </div>
+                        <div class="product__collection__content center">
+                            <h3 class="product__collection__name__title normal__title">PRODUCT NAME</h3>
+                            <p class="product__collection__price normal__text">
+                                $99.99
+                            </p>
+                            <button class="button product__collection__button normal__text letter-sp">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="section__footer">
+        <div class="container-medium">
+            <div class="footer">
+                <div class="footer__logo center">
+                    <img src="./Assets/images/footerlogo.png" alt="footer-logo" class="footer__logo--img">
+                </div>
+                <div class="footer__box">
+                    <div class="footer__content" style="--order: 2">
+                        <h3 class="normal__text footer__title letter-sp">CUSTOMER CARE</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Track your order</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Frequent Question</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="--order: 3">
+                        <h3 class="normal__text footer__title letter-sp">LEGAL INFORMATION:</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Company name: De Carlo Nicholas</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">VAT number: 07020260480</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">REA: FI-674952</a></li>
+                            <p class="normal__text footer__address">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="--order: 4">
+                        <h3 class="normal__text footer__title letter-sp">LEGAL TERMS:</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Informazioni legali</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Condizioni generali di vendita</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Informativa sulla privacy</a></li>
+                            <li class="footer__item"><a href="#" class="normal__text footer__link">Cookie policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content" style="--order: 1">
+                        <div class="footer__intro">
+                            <h3 class="normal__text footer__title letter-sp">SUBSCRIBE FOR NEWSLETTER</h3>
+                            <form action="">
+                                <div class="form-email">
+                                    <input required type="email" name="" id="inputEmail" class="normal__text inputEmail" placeholder="Your Email">
+                                    <button class="normal__text form__button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer__detail">
+                            <div class="footer__social">
+                                <h3 class="normal__text footer__title letter-sp">SOCIAL</h3>
+                            </div>
+                            <ul class="footer-social__list">
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/fb.png" alt="facebook" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/insta.png" alt="instagram" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/linkedin.png" alt="linkedin" class="footer__social--img">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-icon">
+                                        <img src="./Assets/images/youtube.png" alt="youtube" class="footer__social--img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                                                
+                    </div>
+                </div>
+                <div class="footer__end center">
+                    <p class="normal__text footer__description">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+
+    </div>
+    <script src="history.js"></script>
+</body>
+</html>

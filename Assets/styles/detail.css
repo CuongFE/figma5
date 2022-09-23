@@ -1,0 +1,279 @@
+.detail__link {
+  color: #babcc4;
+}
+.detail__link-active {
+  color: #46484f;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.detail__description {
+  font-size: 15px;
+  margin-right: 15px;
+}
+.detail__intro {
+  display: flex;
+  align-items: center;
+}
+.detail__intro svg {
+  margin-right: 15px;
+}
+
+/* DETAIL-SLIDE */
+/* Position the image container (needed to position the left and right arrows) */
+.container-slide {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 580px;
+  /* height: 572px; */
+}
+.mySlides img {
+  height: 672px;
+  /* height: 572px; */
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  top: 93%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 55%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  max-width: 130px;
+  height: 161px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.detail-info__name {
+  line-height: 1.33;
+  color: var(--text-color);
+  letter-spacing: var(--letter-sp);
+}
+.detail-info__cost {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #555562;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.detail-info__size {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-info__size > span {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: var(--letter-sp);
+  font-weight: 600;
+  color: #171719;
+}
+.detail-info__size-icon {
+    display: flex;
+    align-items: center;
+}
+
+.detail-info__size-icon img {
+  width: auto;
+}
+
+.detail-info__size-icon > span {
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+  color: var(--text-color-secondary);
+}
+.form-chose__size {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+  color: var(--text-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid #ececec;
+  box-shadow: none;
+  background: rgb(255, 255, 255);
+  position: relative;
+  cursor: pointer;
+}
+.select {
+    position: relative;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  top: calc(45%);
+  right: 29px;
+  height: 7px;
+  width: 12px;
+  z-index: 1000;
+  background: url("../images/detail-arrow.svg") no-repeat center center / cover;
+  pointer-events: none;
+  cursor: pointer;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom : 20px;
+}
+
+.form-option {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.option-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px;
+
+    border: 1px solid #ECECEC;
+    width: 150px;
+    margin-right: 15px;
+}
+
+.option-amount i {
+    cursor: pointer;
+}
+
+.option-add-cart {
+    border: 1px solid #ECECEC;
+    flex: 1;
+    color : var(--color-font--black1);
+    letter-spacing: var(--letter-sp);
+}
+.option-like {
+    width: 50px;
+    border: 1px solid #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.option-like__icon-fill,
+.option-like__icon {
+    font-size: 20px;
+    cursor: pointer;
+    /* display: none; */
+}
+.option-like__icon.active {
+    display: block;
+}
+.option-like__icon-fill.active {
+    display: block;
+    color: rgb(254 23 23 / 77%);
+
+}
+.btn-buy-now {
+    background-color: var(--color-background--dark);
+    color: var(--white-color);
+    display: block;
+    width: 100%;
+    margin-top: 15px;  
+    letter-spacing: var(--letter-sp);
+}
+
+.detail-comment {
+    padding: 7px 20px;
+    letter-spacing: var(--letter-sp);
+    color: var(--text-color);
+    margin-top: 30px;
+    background-color: #F5F5F5;
+    width: 100%;
+    max-width: 320px;
+}
+.detail-descript {
+    color: var(--color-font--black2);
+    margin-top: 50px;
+    width: 100%;
+    max-width: 477px;
+}
+.detail-heading__gift {
+    color :var(--color-font--black1);
+    margin-top : 40px;
+}
+.detail-heading__gift-img {
+    width: 499px;
+    margin-top: 30px;
+}
+.detail-row {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+}
